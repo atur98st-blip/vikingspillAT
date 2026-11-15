@@ -226,4 +226,4 @@ func _draw() -> void:
 	draw_colored_polygon(PackedVector2Array([Vector2(lx + 8, ly + 12), Vector2(lx + 16, ly + 20), Vector2(lx + 8, ly + 28), Vector2(lx, ly + 20)]), C_TOKT)
 	_tekst(Vector2(lx + 24, ly + 25), "Toktmål", 15, C_BLEKK, null, false)
 	draw_arc(Vector2(lx + 8, ly + 44), 9, 0, TAU, 20, C_HANDEL, 3.0)
-	_tekst(Vector2(lx + 24, ly + 49), "Fast handelsforbindelse", 15, C_BLEKK, null, false)
+	_tekst(Vector2(lx + 24, ly + 49), "Du har handelsvenner her", 15, C_BLEKK, null, false)

@@ -17,7 +17,7 @@
 	"nyaakeren": {
 		"navn": "Ny åker",
 		"tekst": "Mer jord betydde mer korn og flere folk gården kunne fø. Å rydde ny åker var hardt arbeid: Skog og stein måtte fjernes, og jorda måtte gjødsles. Mye av dette tunge arbeidet ble gjort av treller.",
-		"pris": {"solv": 5, "bondene": 5},
+		"pris": {"solv": 10, "bondene": 10},
 		"bygg_effekt": "Gir like mye korn som den første åkeren hver vinter. Gode år gir mer, uår gir mindre. Bøndene må hjelpe til med ryddingen.",
 		"lenker": [
 			{"tekst": "Norgeshistorie: Den mangfoldige vikingtidsgården", "url": "https://www.norgeshistorie.no/vikingtid/0803-den-mangfoldige-vikingtidsgarden.html"},
@@ -29,7 +29,7 @@
 		"tekst": "Kyr, sauer, geiter og griser var gårdens viktigste rikdom. Tidligere sto dyra ofte i den ene enden av langhuset, men i vikingtiden ble det mer vanlig med en egen bygning for dyrene. Mengden vinterfôr avgjorde hvor mange dyr gården kunne holde.",
 		"pris": 15,
 		"inntekt": 4,
-		"bygg_effekt": "+4 sølv hver vinter fra melk, ull og kjøtt. Sauene kommer på beite.",
+		"bygg_effekt": "+4 sølv hver vinter fra melk, ull og kjøtt. Sauene kommer på beite. Du kan laste skipet med ull.",
 		"lenker": [
 			{"tekst": "Norgeshistorie: Den mangfoldige vikingtidsgården", "url": "https://www.norgeshistorie.no/vikingtid/0803-den-mangfoldige-vikingtidsgarden.html"},
 			{"tekst": "Store norske leksikon: Langhus", "url": "https://snl.no/langhus"}
@@ -49,8 +49,8 @@
 		"navn": "Smia",
 		"tekst": "Smeden laget redskaper, våpen, spiker og beslag av jern. I Norge ble jernet utvunnet av myrmalm, som ble smeltet med trekull i groper. Spor etter slik jernutvinning er funnet over hele landet.",
 		"pris": 15,
-		"inntekt": 3,
-		"bygg_effekt": "+3 sølv hver vinter fra salg av redskaper. Gode våpen gir ære (+5).",
+		"inntekt": 4,
+		"bygg_effekt": "+4 sølv hver vinter fra salg av redskaper. Gode våpen gir ære (+5). Du kan laste skipet med jern, og ta i bruk innovasjoner som trenger en smie.",
 		"effekter": {"aere": 5},
 		"lenker": [
 			{"tekst": "Store norske leksikon: Myrmalm", "url": "https://snl.no/myrmalm"}
@@ -60,7 +60,7 @@
 		"navn": "Naustet og skipet",
 		"tekst": "Naustet var et hus ved sjøen der skipet ble lagret, med gavlen og en stor dør mot vannet. Skipet var gårdens viktigste eiendel for fiske, handel og tokt. Langs kysten var sjøen hovedveien.",
 		"pris": {"solv": 20, "bondene": 10},
-		"bygg_effekt": "Du får et skip, og kan dra på handelsferder og tokt. Folk kommer også sjøveien til gården med nye saker. Bøndene må hjelpe til med byggingen. Ære +5.",
+		"bygg_effekt": "Du får en byrding, et lite lasteskip for handel langs kysten. Senere kan du bygge større skip: lasteskip for handel over havet, eller langskip for tokt. Folk kommer også sjøveien til gården med nye saker. Bøndene må hjelpe til med byggingen. Ære +5.",
 		"effekter": {"aere": 5},
 		"lenker": [
 			{"tekst": "Store norske leksikon: Naust", "url": "https://snl.no/naust"},

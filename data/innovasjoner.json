@@ -1,0 +1,105 @@
+{
+	"tekst": "Her kan du bruke sølv på nye redskaper og arbeidsmåter. Hver av dem gir en liten, varig fordel. Du har ikke råd til alt, så velg det som passer med hvordan du vil styre gården.",
+	"veier": [
+		{"id": "jorda", "navn": "Jorda", "tekst": "Mer mat fra den samme gården."},
+		{"id": "utmarka", "navn": "Utmarka", "tekst": "Fjell, myr og berg ga varer som kunne selges langt borte."},
+		{"id": "skipet", "navn": "Skipet", "tekst": "Tryggere og raskere reiser."},
+		{"id": "handverket", "navn": "Håndverket", "tekst": "Arbeid som gjorde råvarer om til verdier."}
+	],
+	"innovasjoner": [
+		{
+			"id": "ard",
+			"vei": "jorda",
+			"navn": "Ard med jernskjær",
+			"pris": 15,
+			"tekst": "Arden var en enkel plog som rispet opp jorda uten å vende den. Med en skjær av jern holdt arden lenger og gikk dypere enn en som bare var av tre.",
+			"virkning_tekst": "+2 sølv fra hver åker hver vinter (ikke i uår).",
+			"virkning": {"per_aaker": 2}
+		},
+		{
+			"id": "seter",
+			"vei": "jorda",
+			"navn": "Seterbruk",
+			"pris": 25,
+			"krever_sted": "fjoset",
+			"tekst": "Om sommeren ble dyra drevet til fjells, der det var friskt beite. Da kunne graset hjemme bli til vinterfôr, og gården kunne holde flere dyr gjennom vinteren.",
+			"virkning_tekst": "+3 sølv fra fjøset hver vinter.",
+			"virkning": {"inntekt": {"fjoset": 3}}
+		},
+		{
+			"id": "fangst",
+			"vei": "utmarka",
+			"navn": "Fangstgroper for rein",
+			"pris": 15,
+			"tekst": "Reinen ble ledet inn i groper og fangstanlegg i fjellet. I vikingtiden var fangsten så stor at mye må ha vært beregnet på salg: Skinn og gevir ble fraktet til handelsbyene, der geviret ble til kammer.",
+			"virkning_tekst": "+1 sølv for hvert lass skinn og pelsverk du selger.",
+			"virkning": {"pris_vare": {"skinn": 1}}
+		},
+		{
+			"id": "jernvinne",
+			"vei": "utmarka",
+			"navn": "Jernvinne i myra",
+			"pris": 20,
+			"krever_sted": "smia",
+			"tekst": "Jern ble utvunnet av myrmalm. Malmen ble røstet over bål og smeltet med trekull i en ovn. I vikingtiden ble det laget mer jern enn bygdene trengte selv, og jernet ble en handelsvare.",
+			"virkning_tekst": "+2 sølv fra smia hver vinter, og +1 sølv for hvert lass jern du selger.",
+			"virkning": {"inntekt": {"smia": 2}, "pris_vare": {"jern": 1}}
+		},
+		{
+			"id": "kvern",
+			"vei": "utmarka",
+			"navn": "Kvernstein fra Hyllestad",
+			"pris": 30,
+			"tekst": "I Hyllestad i Sogn ble det hogd kvernstein rett ut av berget fra vikingtiden av. Steinene ble fraktet med skip og solgt langt utenfor Norge. Sporene etter bruddene kan fortsatt sees.",
+			"virkning_tekst": "+1 sølv for hvert lass brynestein og kleber du selger.",
+			"virkning": {"pris_vare": {"stein": 1}}
+		},
+		{
+			"id": "tjaere",
+			"vei": "skipet",
+			"navn": "Tjærebrenning",
+			"pris": 15,
+			"tekst": "Tjære ble brent av furu i groper, og brukt til å tette og beskytte skrog, tau og seil. Et skip uten tjære råtnet fort.",
+			"virkning_tekst": "Faren for å miste skipet blir halvert.",
+			"virkning": {"skip_tap": -0.5}
+		},
+		{
+			"id": "seil",
+			"vei": "skipet",
+			"navn": "Større seil",
+			"pris": 25,
+			"tekst": "Et større seil ga mer fart. Da kom skipet raskere unna uvær, og de som bodde ved kysten, rakk ikke å samle seg før skipet var framme.",
+			"virkning_tekst": "+5 % sjanse for å lykkes på alle reiser.",
+			"virkning": {"sjanse_reise": 0.05}
+		},
+		{
+			"id": "vev",
+			"vei": "handverket",
+			"navn": "Flere vevstoler",
+			"pris": 15,
+			"krever_sted": "fjoset",
+			"tekst": "Ulla ble spunnet på håndtein og vevd på oppstadvev, en vev som sto lent mot veggen. Vadmel, et tett ullstoff, ble så viktig at det senere ble brukt som betalingsmiddel.",
+			"virkning_tekst": "+1 sølv for hvert lass ull og vadmel du selger.",
+			"virkning": {"pris_vare": {"ull": 1}}
+		},
+		{
+			"id": "vekt",
+			"vei": "handverket",
+			"navn": "Skålvekt og vektlodd",
+			"pris": 20,
+			"tekst": "Sølv ble betalt etter vekt. En kjøpmann med egen sammenleggbar skålvekt og nøyaktige lodd kunne kontrollere hver handel selv. Slike vekter og lodd er funnet i graver og på handelsplasser som Kaupang.",
+			"virkning_tekst": "+1 sølv for hvert lass du selger, uansett vare. Ingen lurer deg på vekta.",
+			"virkning": {"pris_alle": 1}
+		},
+		{
+			"id": "vaapen",
+			"vei": "handverket",
+			"navn": "Bedre våpen",
+			"pris": 35,
+			"krever_sted": "smia",
+			"tekst": "Smeden sveiset sammen jern og stål til sverd, økser og spydspisser. Gode våpen var kostbare, og et sverd var et tegn på rang.",
+			"virkning_tekst": "+10 % sjanse for seier på tokt.",
+			"virkning": {"sjanse_tokt": 0.1}
+		}
+	]
+}

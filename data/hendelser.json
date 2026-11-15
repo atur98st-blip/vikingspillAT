@@ -105,13 +105,13 @@
 		"valg": [
 			{
 				"tekst": "Støtt Gudrun – hun skal få eiendelene sine tilbake",
-				"resultat": "Gudrun skiller seg fra Torstein. Han raser, men må gi tilbake det som er hennes. Slekta di står samlet.",
-				"effekter": {"aetten": 10, "aere": 5}
+				"resultat": "Gudrun skiller seg fra Torstein. Han raser, men må gi tilbake det som er hennes. Slekta di står samlet, men Torsteins frender i bygda tar hans parti.",
+				"effekter": {"aetten": 10, "aere": 5, "bondene": -5}
 			},
 			{
 				"tekst": "Send henne tilbake – ekteskapet er en avtale",
-				"resultat": "Gudrun drar tilbake til Torstein. Moren din snakker ikke til deg resten av vinteren.",
-				"effekter": {"aetten": -15}
+				"resultat": "Gudrun drar tilbake til Torstein. Freden med Torsteins slekt holder, men moren din snakker ikke til deg resten av vinteren.",
+				"effekter": {"aetten": -15, "bondene": 5}
 			}
 		],
 		"fakta": {
@@ -175,9 +175,9 @@
 				"effekter": {"bondene": 10, "aere": -5}
 			},
 			{
-				"tekst": "Bli hjemme – du har viktigere ting å gjøre",
-				"resultat": "En høvding som ikke møter på tinget? Folk tror du er feig eller hovmodig.",
-				"effekter": {"bondene": -15, "aere": -10}
+				"tekst": "Bli hjemme – våronna kan ikke vente",
+				"resultat": "Åkrene blir sådd i tide, og gården tjener på det. Men en høvding som ikke møter på tinget? Folk tror du er feig eller hovmodig.",
+				"effekter": {"solv": 5, "bondene": -10, "aere": -5}
 			}
 		],
 		"fakta": {
@@ -326,6 +326,7 @@
 	},
 	{
 		"id": "gravferd",
+		"forst": true,
 		"sted": "gravhaugene",
 		"person": "Slekta di",
 		"tittel": "Farens gravferd",
@@ -400,8 +401,8 @@
 			},
 			{
 				"tekst": "Det er farens rett å bestemme",
-				"resultat": "Du blander deg ikke. Ifølge skikken er det faren som bestemmer over barnet.",
-				"effekter": {"aere": -5}
+				"resultat": "Du blander deg ikke. Ifølge skikken er det faren som bestemmer over barnet, og ingen i bygda sier noe på det.",
+				"effekter": {}
 			}
 		],
 		"fakta": {
@@ -422,7 +423,7 @@
 		"valg": [
 			{
 				"tekst": "La deg primsigne – handel er handel",
-				"resultat": "Presten gjør korstegnet over deg, og handelen blir god. Men noen bønder ser skjevt på deg.",
+				"resultat": "Presten gjør korstegnet over deg, og handelen blir god. Kristne kjøpmenn legger heretter oftere til ved brygga di. Men noen bønder ser skjevt på deg.",
 				"effekter": {"solv": 15, "gudene": -10},
 				"flagg": "kors"
 			},
@@ -445,6 +446,7 @@
 	{
 		"id": "viking",
 		"sted": "naustet",
+		"krever_skip": true,
 		"person": "De unge mennene i bygda",
 		"tittel": "På viking?",
 		"tekst": "Våronna er over. De unge mennene vil seile vestover på tokt i sommer, og de vil låne skipet ditt. «Det finnes rike klostre i vest,» sier de.",
@@ -454,14 +456,16 @@
 				"kostnad": 10,
 				"sjanse": 0.6,
 				"suksess": {
-					"resultat": "Skipet kommer hjem om høsten, fullt av sølv og fanger. Alle snakker om toktet.",
-					"effekter": {"solv": 25, "aere": 10, "aetten": -5},
-					"flagg": "skip_bytte"
+					"resultat": "Skipet kommer hjem om høsten, tungt av sølv. Alle snakker om toktet.",
+					"effekter": {"solv": 20, "aere": 10, "aetten": -5},
+					"flagg": "skip_bytte",
+					"logg": "tokt_ok"
 				},
 				"fiasko": {
 					"resultat": "Skipet kommer aldri tilbake. I mange gårder sørger de over sønner som er borte.",
-					"effekter": {"solv": -10, "bondene": -15, "aetten": -10},
-					"flagg": "skip_tapt"
+					"effekter": {"solv": -10, "bondene": -10, "aetten": -10},
+					"flagg": "skip_tapt",
+					"logg": "tokt_feil"
 				}
 			},
 			{
@@ -640,6 +644,119 @@
 			"lenker": [
 				{"tekst": "Store norske leksikon: Høgsete", "url": "https://snl.no/h%C3%B8gsete"},
 				{"tekst": "Store norske leksikon: Borg – høvdingsete i Nordland", "url": "https://snl.no/Borg_-_h%C3%B8vdingsete_i_Nordland"}
+			]
+		}
+	},
+	{
+		"id": "feide_hevn",
+		"krever_flagg": "aettefeide",
+		"uten_flagg": "feide_hevn",
+		"sted": "gravhaugene",
+		"person": "Frendene dine",
+		"tittel": "Hevnen kommer",
+		"tekst": "Eiriks brødre har ikke glemt drapet i gildet. En morgen blir fetteren din Sigurd funnet død ved gjerdet. Frendene dine samler seg ved gravhaugene. «Nå er det vår tur,» sier de. Bøndene frykter at feiden skal vokse.",
+		"valg": [
+			{
+				"tekst": "Ta hevn – en av Eiriks brødre skal dø",
+				"resultat": "Dere overfaller Eiriks eldste bror på vei hjem fra fisket. Slekta di holder hodet høyt. Men nå er det Eiriks frender som har noe å hevne.",
+				"effekter": {"aetten": 10, "aere": 5, "bondene": -10},
+				"flagg": "feide_hevn"
+			},
+			{
+				"tekst": "Tilby forlik: drap mot drap, og mannebot for resten",
+				"resultat": "Du sender bud om forlik. De to drapene blir regnet opp mot hverandre, og du betaler sølv for at freden skal holde. Noen av frendene dine mener du lot Sigurd ligge uhevnet.",
+				"effekter": {"solv": -15, "aetten": -10, "bondene": 10},
+				"flagg": "forlik",
+				"fjern_flagg": ["aettefeide"]
+			},
+			{
+				"tekst": "Be en mektig mann fra nabobygda om å mekle",
+				"resultat": "Mekleren får begge ættene til å møtes. Boten blir mindre, og ingen taper ansikt helt. Men alle ser at du trengte hjelp utenfra.",
+				"effekter": {"solv": -8, "aere": -5, "bondene": 5},
+				"flagg": "forlik",
+				"fjern_flagg": ["aettefeide"]
+			}
+		],
+		"fakta": {
+			"tittel": "Hevnplikten",
+			"tekst": "I et samfunn uten politi var det trusselen om hevn som beskyttet folk. Hevn var ikke bare en rett, men noe slekta ventet av deg. Den som lot en frende ligge uhevnet, kunne tape ære. Hevnen måtte ikke ramme drapsmannen selv, den kunne ramme en annen i slekta hans. I islendingesagaene er det ofte kvinner som egger mennene til hevn, men husk at sagaene er litteratur fra 1200-tallet.",
+			"kilde": "Sagaer og lover (skrevet ned fra 1100-tallet)",
+			"lenker": [
+				{"tekst": "Store norske leksikon: Blodhevn", "url": "https://snl.no/blodhevn"},
+				{"tekst": "Store norske leksikon: Ætt", "url": "https://snl.no/%C3%A6tt"}
+			]
+		}
+	},
+	{
+		"id": "feide_vokser",
+		"krever_flagg": "feide_hevn",
+		"gjentas": true,
+		"sted": "tingstedet",
+		"person": "Bøndene i bygda",
+		"tittel": "Feiden vokser",
+		"tekst": "Eiriks frender har slått tilbake. To av folkene dine ble overfalt på vei hjem, og én av dem er død. Bøndene våger ikke lenger å ferdes alene. På tingstedet ber de deg få slutt på ufreden.",
+		"valg": [
+			{
+				"tekst": "Fortsett – ætten din viker ikke",
+				"resultat": "Du svarer med et nytt drap. Frendene dine er stolte, men gårdene i bygda holder vakt om natta, og ingen vet hvem som blir den neste.",
+				"effekter": {"aetten": 5, "aere": 5, "bondene": -15}
+			},
+			{
+				"tekst": "Slutt forlik med full mannebot og et gilde for begge ættene",
+				"resultat": "Sølvet blir veid opp foran vitner, og de to ættene drikker sammen i hallen din. Feiden er over. Det kostet mye mer enn om du hadde betalt den første boten.",
+				"effekter": {"solv": -25, "aetten": -5, "bondene": 15},
+				"flagg": "forlik",
+				"fjern_flagg": ["aettefeide", "feide_hevn"]
+			},
+			{
+				"tekst": "La tinget dømme, og bøy deg for dommen",
+				"resultat": "Tinget dømmer begge ættene til å betale for sine drap. Du får mindre å betale, men du må stå foran hele bygda og ta imot dommen.",
+				"effekter": {"solv": -12, "aere": -10, "bondene": 10},
+				"flagg": "forlik",
+				"fjern_flagg": ["aettefeide", "feide_hevn"]
+			}
+		],
+		"fakta": {
+			"tittel": "Forlik og mekling",
+			"tekst": "De fleste konflikter endte ikke med dom, men med forlik. Venner, frender eller mektige menn gikk imellom og meklet. Boten ble veid opp i sølv foran vitner. Hvor stor den var, kom an på rangen til den som var drept: Etter Gulatingslova hadde en hauld, en bonde med odelsjord, rett til større bot enn en vanlig bonde, og en løysing til mindre. Jo lenger feiden varte, desto flere drap måtte gjøres opp.",
+			"kilde": "Lov: Gulatingslova, og sagaer",
+			"lenker": [
+				{"tekst": "Store norske leksikon: Mannebøter", "url": "https://snl.no/manneb%C3%B8ter"},
+				{"tekst": "Store norske leksikon: Hauld", "url": "https://snl.no/hauld"}
+			]
+		}
+	},
+	{
+		"id": "jarlens_gjengjeld",
+		"krever_flagg": "jarlens_ring",
+		"sted": "langhuset",
+		"person": "Jarlens menn",
+		"tittel": "Jarlen venter gjengjeld",
+		"tekst": "Jarlens menn sitter i hallen din. De minner deg om gullringen du tok imot på tinget. «Jarlen bygger et nytt skip,» sier de. «Han regner med at vennen hans sender tømmer, tjære og tolv mann til arbeidet.»",
+		"valg": [
+			{
+				"tekst": "Send menn og tømmer – en gave skal gjengjeldes",
+				"resultat": "Tolv mann fra bygda arbeider for jarlen hele sommeren. Bøndene savner dem i slåtten, men jarlen kaller deg en trofast venn.",
+				"effekter": {"bondene": -10, "aere": 10}
+			},
+			{
+				"tekst": "Send sølv i stedet",
+				"resultat": "Jarlens menn veier sølvet og drar. Gjelden er betalt, og bøndene dine får bli hjemme.",
+				"effekter": {"solv": -15, "aere": 5}
+			},
+			{
+				"tekst": "Avslå – du skylder ham ingenting",
+				"resultat": "Jarlens menn reiser seg uten et ord. Snart vet alle langs kysten at du tok imot ringen, men ikke ville gi noe tilbake. Bøndene er likevel glade for å slippe.",
+				"effekter": {"aere": -15, "bondene": 5}
+			}
+		],
+		"fakta": {
+			"tittel": "Gave ser etter gjengjeld",
+			"tekst": "Gaver var ikke gratis i vikingtiden. Den som tok imot en gave, skyldte giveren noe tilbake: en gave, en tjeneste eller troskap. Diktet Håvamål sier at en gave alltid ser etter gjengjeld. Konger og jarler ga ringer, våpen og klær til mennene sine for å binde dem til seg. Den som tok imot uten å gi noe tilbake, tapte ære.",
+			"kilde": "Eddadikt: Håvamål, og skaldekvad",
+			"lenker": [
+				{"tekst": "Store norske leksikon: Håvamål", "url": "https://snl.no/H%C3%A5vam%C3%A5l"},
+				{"tekst": "Norgeshistorie: Rane, bytte, kjøpe, gi", "url": "https://www.norgeshistorie.no/vikingtid/0806-rane-bytte-kjope-gi.html"}
 			]
 		}
 	}

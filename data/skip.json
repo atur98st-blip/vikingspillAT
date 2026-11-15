@@ -1,0 +1,75 @@
+{
+	"fakta": {
+		"tittel": "Seilet – år med arbeid",
+		"tekst": "Seilet var en av de dyreste delene av skipet. Det ble vevd av ull på en oppstadvev, sydd sammen av lange baner og smurt inn med fett og tjære for å holde tett mot vinden. Forsøk med kopier av vikingskip tyder på at et stort seil kan ha krevd ull fra rundt to hundre sauer og flere års arbeid med spinning og veving. Det arbeidet ble for det meste gjort av kvinner. Uten veverne hadde det ikke blitt noen vikingferder.",
+		"kilde": "Arkeologi, og forsøk med kopier av vikingskip (Vikingeskibsmuseet i Roskilde)",
+		"lenker": [
+			{"tekst": "Store norske leksikon: Vikingskip", "url": "https://snl.no/vikingskip"},
+			{"tekst": "Vikingeskibsmuseet i Roskilde", "url": "https://www.vikingeskibsmuseet.dk/"}
+		]
+	},
+	"varer": [
+		{"id": "stein", "navn": "Brynestein og kleber"},
+		{"id": "skinn", "navn": "Skinn og pelsverk"},
+		{"id": "ull", "navn": "Ull og vadmel", "krever": "fjoset"},
+		{"id": "jern", "navn": "Jern", "krever": "smia"}
+	],
+	"typer": [
+		{
+			"id": "byrding",
+			"navn": "Byrding",
+			"retning": "Skipet du starter med",
+			"tekst": "Et lite, bredt lasteskip for fart langs kysten. Sagaene nevner byrdinger som frakter varer mellom bygdene.",
+			"last": 4,
+			"hav": false,
+			"kan_tokt": false
+		},
+		{
+			"id": "knarr",
+			"navn": "Knarr",
+			"retning": "Handelsveien, steg 1",
+			"krever": "byrding",
+			"pris": {"solv": 25},
+			"tekst": "Knarren var vikingtidens havgående lasteskip: bred, dyp og med høye sider, og seilt av et lite mannskap. En knarr som ble funnet i Roskildefjorden i Danmark, var bygd i Sogn rundt 1030.",
+			"last": 8,
+			"hav": true,
+			"kan_tokt": false
+		},
+		{
+			"id": "storknarr",
+			"navn": "Stor knarr",
+			"retning": "Handelsveien, steg 2",
+			"krever": "knarr",
+			"pris": {"solv": 40},
+			"tekst": "En større knarr med enda mer lasterom, og høye sider som tåler grov sjø. Et lasteskip som ble funnet i havna i Hedeby, kunne bære rundt 60 tonn.",
+			"last": 12,
+			"hav": true,
+			"kan_tokt": false,
+			"sjanse": 0.05
+		},
+		{
+			"id": "snekke",
+			"navn": "Snekke",
+			"retning": "Toktveien, steg 1",
+			"krever": "byrding",
+			"pris": {"solv": 25, "bondene": 5},
+			"tekst": "Snekka var det minste av langskipene, med rundt tjue par årer. Den var lang, smal og rask, og kunne ros opp elver og dras rett opp på en strand. Derfor kom den overraskende. Men det er lite plass til varer om bord.",
+			"last": 3,
+			"hav": true,
+			"kan_tokt": true
+		},
+		{
+			"id": "skeid",
+			"navn": "Skeid",
+			"retning": "Toktveien, steg 2",
+			"krever": "snekke",
+			"pris": {"solv": 40, "bondene": 5},
+			"tekst": "Skeiden var et stort langskip med tretti par årer eller mer, og plass til mange krigere. Et slikt skip som ble funnet i Roskildefjorden, var 30 meter langt og bygd i Dublin rundt 1042.",
+			"last": 3,
+			"hav": true,
+			"kan_tokt": true,
+			"tokt_sjanse": 0.15,
+			"bytte": 6
+		}
+	]
+}

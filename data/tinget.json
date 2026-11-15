@@ -25,8 +25,9 @@
 				{
 					"tekst": "Gå med på jarlens krav",
 					"motstand": 45,
-					"resultat": "Tinget går med på kravet. Jarlen sender deg en gullring som takk, og ryktet ditt stiger.",
-					"effekter": {"aere": 10, "solv": 10, "bondene": -5}
+					"resultat": "Tinget går med på kravet. Jarlen sender deg en gullring som takk, og ryktet ditt stiger. Men den som tar imot en gave fra jarlen, skylder ham noe.",
+					"effekter": {"aere": 10, "solv": 10, "bondene": -5},
+					"flagg": "jarlens_ring"
 				},
 				{
 					"tekst": "Nekt – bygda trenger mennene selv",
@@ -63,7 +64,7 @@
 				{
 					"tekst": "Til handel i Hedeby – trygg inntekt",
 					"motstand": 40,
-					"resultat": "Tinget velger handel. Bygdas kjøpmenn knytter faste forbindelser i Hedeby.",
+					"resultat": "Tinget velger handel. Bygdas kjøpmenn får handelsvenner i Hedeby, og neste gang du seiler dit, får du bedre pris.",
 					"effekter": {"solv": 10, "bondene": 5},
 					"kontakt": 3
 				},
@@ -75,12 +76,12 @@
 				}
 			],
 			"fakta": {
-				"tittel": "Rane, bytte, kjøpe, gi",
-				"tekst": "Munkene skrev om vikingenes plyndring, men plyndring var langt fra den eneste inntektskilden. Vikingtidens økonomi bygde også på varebytte, kjøp og salg, krig og gaver. Gaver knyttet mennesker sammen: Høvdinger belønnet følget sitt med kostbare gjenstander.",
-				"kilde": "Arkeologi og skriftlige kilder",
+				"tittel": "Vikingskipet",
+				"tekst": "Vikingskipene var klinkbygde: Bordene i skroget overlappet hverandre og ble holdt sammen med jernnagler. Det ga et lett og bøyelig skrog. Med seil, som trolig kom i bruk i Norden på 700-tallet, kunne skipene krysse åpent hav. Fordi de stakk grunt, kunne de også ros opp elver og dras rett opp på en strand. Gokstadskipet, bygd rundt år 900, er over 23 meter langt og hadde plass til 32 roere.",
+				"kilde": "Arkeologi (skipsfunnene fra Oseberg, Gokstad og Skuldelev)",
 				"lenker": [
-					{"tekst": "Norgeshistorie: Rane, bytte, kjøpe, gi", "url": "https://www.norgeshistorie.no/vikingtid/0806-rane-bytte-kjope-gi.html"},
-					{"tekst": "Norgeshistorie: Vikingferdene", "url": "https://www.norgeshistorie.no/vikingtid/0808-vikingferdene.html"}
+					{"tekst": "Store norske leksikon: Vikingskip", "url": "https://snl.no/vikingskip"},
+					{"tekst": "Store norske leksikon: Gokstadskipet", "url": "https://snl.no/Gokstadskipet"}
 				]
 			}
 		},
@@ -161,7 +162,7 @@
 			"valg": [
 				{
 					"tekst": "Legg fram forslaget",
-					"motstand": 70,
+					"motstand": 60,
 					"resultat": "Tinget lar prestene bli. Handelsfolk fra kristne land kommer oftere, men de som holder på de gamle gudene, ser mørkt på det.",
 					"effekter": {"gudene": -15, "aere": 5, "solv": 10},
 					"flagg": "kors"
@@ -195,14 +196,7 @@
 					"effekter": {"bondene": 10, "aere": 5}
 				}
 			],
-			"fakta": {
-				"tittel": "Fredløshet",
-				"tekst": "Den som ble dømt fredløs, mistet lovens vern. Den fredløse mistet eiendommen sin og kunne drepes uten at drapsmannen ble straffet. Det var en av de strengeste straffene i et samfunn uten fengsler og politi.",
-				"kilde": "Lover og sagaer",
-				"lenker": [
-					{"tekst": "Store norske leksikon: Fredløshet", "url": "https://snl.no/fredl%C3%B8shet"}
-				]
-			}
+			"fakta_ref": "fredlos"
 		},
 		{
 			"id": "fellestokt",

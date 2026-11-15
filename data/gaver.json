@@ -1,0 +1,43 @@
+{
+	"tekst": "Sølv som bare ligger i kista, gir ingen makt. En høvding gjør rikdom om til vennskap ved å gi gaver og holde gilder. Den som tar imot en gave, skylder deg noe tilbake. Du kan gjøre hver av disse tingene én gang hver vinter.",
+	"fakta": {
+		"tittel": "Gilde og gavmildhet",
+		"tekst": "Et gilde var mer enn en fest. Høvdingen viste rikdom og gavmildhet, gjestene fikk mat, øl og gaver, og til gjengjeld ventet han støtte. Rikdom måtte deles ut for å bli til vennskap og følge. Skaldene roser derfor høvdinger som er gavmilde, og kaller en konge «ringbryter», en som bryter opp gullringer og deler dem ut. Den som var gjerrig, mistet folk.",
+		"kilde": "Skaldekvad og eddadikt (Håvamål), og arkeologi (gildehaller)",
+		"lenker": [
+			{"tekst": "Norgeshistorie: Rane, bytte, kjøpe, gi", "url": "https://www.norgeshistorie.no/vikingtid/0806-rane-bytte-kjope-gi.html"},
+			{"tekst": "Store norske leksikon: Håvamål", "url": "https://snl.no/H%C3%A5vam%C3%A5l"}
+		]
+	},
+	"mottakere": [
+		{
+			"id": "gilde",
+			"navn": "Gilde for bygda",
+			"knapp": "Hold gilde",
+			"tekst": "Du slakter og brygger, og alle frie menn i bygda er velkomne i hallen din.",
+			"kost": {"solv": 12},
+			"effekter": {"bondene": 6},
+			"resultat": "Hallen er full i tre dager. Bøndene spiser og drikker ved bordet ditt, og de går hjem og sier at du er en høvding som deler."
+		},
+		{
+			"id": "frendene",
+			"navn": "Gaver til frendene",
+			"knapp": "Gi frendene gaver",
+			"tekst": "Du gir armringer, kapper og våpen til brødre, fettere og svogere.",
+			"kost": {"solv": 10},
+			"effekter": {"aetten": 5},
+			"gjengjeld": "Frendene stiller som mannskap på ditt neste tokt. Da koster ikke toktet støtte fra bøndene.",
+			"resultat": "Frendene tar imot gavene foran alle i hallen. Nå vet de at du husker hvem som er din egen slekt, og de vet at de skylder deg noe."
+		},
+		{
+			"id": "ottar",
+			"navn": "En gave til storbonden Ottar",
+			"knapp": "Gi Ottar en gave",
+			"tekst": "Ottar er den mektigste bonden i bygda, og mange stemmer som ham på tinget. Du sender ham et sverd med sølv på hjaltet.",
+			"kost": {"solv": 10},
+			"effekter": {},
+			"gjengjeld": "På neste ting taler Ottar for deg (+10 støtte) i stedet for mot deg.",
+			"resultat": "Ottar veier sverdet i hånden og nikker. Han sier ikke stort, men begge vet hva gaven betyr: Neste gang du trenger ham på tinget, kan han ikke si nei."
+		}
+	]
+}

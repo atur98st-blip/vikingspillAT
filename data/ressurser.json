@@ -2,7 +2,7 @@
 	"solv": {
 		"navn": "Sølv",
 		"historisk": "I vikingtiden var sølv det viktigste betalingsmiddelet. Det var vekten som avgjorde verdien, ikke hvordan sølvet så ut. Smykker og mynter ble hakket i biter, hakksølv, og veid på små skålvekter. Mye av sølvet kom østfra som arabiske sølvmynter, dirhemer. Kaupang alene har gitt over 90 slike mynter.",
-		"spill": "Du bruker sølv til å bygge, betale bøter, holde gilder og gi gaver på tinget. Du får sølv hver vinter fra åkrene, dyra, smia, trellenes arbeid og handelsforbindelsene dine. Tokt gir mye sølv på en gang. Du kan ikke kjøpe noe du ikke har råd til.",
+		"spill": "Du får sølv hver vinter fra åkrene, dyra, smia og trellenes arbeid, og når skipet kommer hjem fra handel eller tokt. Sølv som bare ligger i kista, gir ingen makt. Bruk det til å bygge, skaffe større skip, ta i bruk innovasjoner, betale bøter og gi gaver og gilder. Du kan ikke kjøpe noe du ikke har råd til.",
 		"lenker": [
 			{"tekst": "Store norske leksikon: Vikingtiden", "url": "https://snl.no/vikingtiden"},
 			{"tekst": "Norgeshistorie: Rane, bytte, kjøpe, gi", "url": "https://www.norgeshistorie.no/vikingtid/0806-rane-bytte-kjope-gi.html"},
@@ -21,7 +21,7 @@
 	"gudene": {
 		"navn": "Gudenes gunst",
 		"historisk": "Folk i vikingtiden trodde at gudene påvirket avlinger, vær, krig og helse. Gjennom blot, offerhandlinger med dyr og felles måltider, prøvde man å sikre et godt år og fred. Blotene ble ofte arrangert av folk med høy rang, og det å holde blot var en del av høvdingens makt.",
-		"spill": "Gudenes gunst avgjør hvor godt året blir: Over 65 gir rike avlinger, under 30 gir uår. Den påvirker også om tokt, handelsreiser og andre farlige valg lykkes: Ved høy gunst øker sjansen med opptil 20 prosentpoeng, ved lav gunst synker den like mye. Gudene glemmer fort: Gunsten synker hver vinter, mindre hvis du har en offerlund, og mer hvis du har sluppet inn den kristne troen. Faller gunsten til null, mener bøndene at du har vendt gudene mot bygda, og du må flykte.",
+		"spill": "Gudenes gunst avgjør hvor godt året blir: Over 65 gir rike avlinger, under 30 gir uår. Den påvirker også om tokt, handelsreiser og andre farlige valg lykkes: Ved høy gunst øker sjansen med opptil 10 prosentpoeng, ved lav gunst synker den like mye. Gudene glemmer fort: Gunsten synker hver vinter, mindre hvis du har en offerlund, og mer hvis du har sluppet inn den kristne troen. Faller gunsten til null, mener bøndene at du har vendt gudene mot bygda, og du må flykte.",
 		"lenker": [
 			{"tekst": "Store norske leksikon: Blot", "url": "https://snl.no/blot"}
 		]
@@ -29,7 +29,7 @@
 	"aetten": {
 		"navn": "Ætten",
 		"historisk": "Ætten var kretsen av slektninger rundt hver person, ikke en fast gruppe med medlemmer. Slekta var din viktigste beskyttelse: Den tok hevn, betalte og fikk bøter når noen ble drept, og stilte opp for deg. Jord ble i hovedsak arvet gjennom mannslinja.",
-		"spill": "Ætten støtter deg i ekteskap, feider og på tinget. Du kan bruke ætten som politisk valuta: Be slekta mobilisere for deg på tinget. Tokt der unge menn dør, svekker ætten. Faller ætten til null, står du alene.",
+		"spill": "Ætten støtter deg i ekteskap, feider og på tinget. Du kan bruke ætten som politisk valuta: Be slekta mobilisere for deg på tinget. Tokt der unge menn dør, svekker ætten. Vennskap må holdes ved like: Støtten fra ætten synker litt hver vinter, og gaver til frendene henter den opp igjen. Faller ætten til null, står du alene.",
 		"lenker": [
 			{"tekst": "Store norske leksikon: Ætt", "url": "https://snl.no/%C3%A6tt"},
 			{"tekst": "Store norske leksikon: Mannebøter", "url": "https://snl.no/manneb%C3%B8ter"}
@@ -38,7 +38,7 @@
 	"bondene": {
 		"navn": "Bøndene",
 		"historisk": "De fleste i vikingtiden var bønder, og flertallet var selveiende. En høvding hadde ingen hær, politi eller statsmakt bak seg. Makten bygde på at de frie bøndene fulgte ham, og han måtte gi noe tilbake: gaver, gilder og beskyttelse. Ifølge sagaene ble selv Håkon jarl, som styrte Norge rundt 970–995, drept under en bondeoppstand.",
-		"spill": "Bøndene er din viktigste støtte på tinget: Jo mer de støtter deg, jo lettere får du gjennom sakene dine. De er også mannskapet når skipet skal på tokt, så tokt og store byggeprosjekter koster støtte. Faller støtten til null, velger tinget en annen høvding.",
+		"spill": "Bøndene er din viktigste støtte på tinget: Jo mer de støtter deg, jo lettere får du gjennom sakene dine. De er også mannskapet når skipet skal på tokt, så tokt og store byggeprosjekter koster støtte. Bøndene følger deg ikke gratis: Støtten synker litt hver vinter, og gilder henter den opp igjen. Faller støtten til null, velger tinget en annen høvding.",
 		"lenker": [
 			{"tekst": "Norgeshistorie: Treller, bønder og elite", "url": "https://www.norgeshistorie.no/vikingtid/mennesker/0801-treller-bonder-og-elite.html"},
 			{"tekst": "Store norske leksikon: Håkon jarl", "url": "https://snl.no/H%C3%A5kon_jarl"},
